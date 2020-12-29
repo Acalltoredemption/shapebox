@@ -9,8 +9,8 @@ import Display from './components/display/display';
     return (
         <div>
             <Display />
-            <Controls />
             <Container />
+            <Controls />
         </div>
     );
     };
