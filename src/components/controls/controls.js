@@ -3,7 +3,6 @@ import './controls.css';
 import { ShapeContext } from '../../contexts/ShapeContext';
 
 
-
 class Controls extends Component  {
     render(){
         return(

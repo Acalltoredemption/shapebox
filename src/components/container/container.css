@@ -92,7 +92,34 @@ left: 10px;
     }
 
 
-
+    .bluee {
+        border-bottom: blue;
+        border-bottom-color: blue;
+        border-top-color: blue;
+        color: blue;
+        
+    }
+    .greenn {
+        border-bottom: green;
+        border-bottom-color: green;
+        border-top-color: green;
+        color: green;
+        
+    }
+    .yelloww {
+        border-bottom: yellow;
+        border-bottom-color: yellow;
+        border-top-color: yellow;
+        color: yellow;
+        
+    }
+    .redd {
+        border-bottom: red;
+        border-bottom-color: red;
+        border-top-color: red;
+        color: red;
+        
+    }
 
     .triangle {
         text-align: center;
@@ -100,7 +127,7 @@ left: 10px;
         height: 0;
         border-left: 70px solid transparent;
         border-right: 70px solid transparent;
-        border-bottom: 140px solid blue;
+        border-bottom: 140px solid;
         
       }
 
@@ -108,7 +135,7 @@ left: 10px;
         width: 0;
         height: 0;
         border: 70px solid transparent;
-        border-bottom-color: blue;
+        
         position: relative;
         top: -70px;
       }
@@ -120,7 +147,7 @@ left: 10px;
         width: 0;
         height: 0;
         border: 70px solid transparent;
-        border-top-color: blue;
+        
       }
 
 
@@ -128,16 +155,16 @@ left: 10px;
         margin: 50px 0;
         position: relative;
         display: block;
-        color: blue;
+        
         width: 0px;
         height: 0px;
         border-right: 100px solid transparent;
-        border-bottom: 70px solid blue;
+        border-bottom: 70px solid ;
         border-left: 100px solid transparent;
         transform: rotate(35deg);
       }
       .star-five:before {
-        border-bottom: 80px solid blue;
+        border-bottom: 80px solid ;
         border-left: 30px solid transparent;
         border-right: 30px solid transparent;
         position: absolute;
@@ -152,13 +179,13 @@ left: 10px;
       .star-five:after {
         position: absolute;
         display: block;
-        color: blue;
+        
         top: 3px;
         left: -105px;
         width: 0px;
         height: 0px;
         border-right: 100px solid transparent;
-        border-bottom: 70px solid blue;
+        border-bottom: 70px solid ;
         border-left: 100px solid transparent;
         transform: rotate(-70deg);
         content: '';
@@ -168,5 +195,5 @@ left: 10px;
     .square {
         width: 140px;
         height: 140px;
-        background: blue;
+        
       }
