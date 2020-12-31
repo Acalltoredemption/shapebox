@@ -2,12 +2,13 @@ import React from 'react';
 import './controls.css';
 
 const Controls = () => {
+
     return (
         <div className="control-panel">
-            <a class="waves-effect waves-light btn">Square</a>
-            <a class="waves-effect waves-light btn">Triangle</a>
-            <a class="waves-effect waves-light btn">Diamond</a>
-            <a class="waves-effect waves-light btn">Star</a>
+            <button class="waves-effect waves-light btn">Square</button>
+            <button class="waves-effect waves-light btn">Triangle</button>
+            <button class="waves-effect waves-light btn">Diamond</button>
+            <button class="waves-effect waves-light btn">Star</button>
         </div>
     )
 }
