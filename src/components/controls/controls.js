@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './controls.css';
+import { ShapeContext } from '../../contexts/ShapeContext';
 
-const Controls = () => {
 
-    return (
-        <div className="control-panel">
-            <button class="waves-effect waves-light btn">Square</button>
-            <button class="waves-effect waves-light btn">Triangle</button>
-            <button class="waves-effect waves-light btn">Diamond</button>
-            <button class="waves-effect waves-light btn">Star</button>
+
+class Controls extends Component  {
+    render(){
+        return(
+        <ShapeContext.Consumer>{(context) => {
+            const {toggleShapeSquare, toggleShapeTriangle, toggleShapeDiamond, toggleShapeStar} = context;
+
+
+            return(
+            <div className="control-panel">
+            <button  onClick={toggleShapeSquare} className="waves-effect waves-light btn">Square</button>
+            <button  onClick={toggleShapeTriangle} className="waves-effect waves-light btn">Triangle</button>
+            <button  onClick={toggleShapeDiamond} className="waves-effect waves-light btn">Diamond</button>
+            <button  onClick={toggleShapeStar} className="waves-effect waves-light btn">Star</button>
         </div>
-    )
-}
+            );
+        }}
+         </ShapeContext.Consumer>
+        )
+        }}
+
+
 
 export default Controls;

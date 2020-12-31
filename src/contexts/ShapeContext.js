@@ -1,26 +1,22 @@
-import React, { Component } from 'react';
+import React, { createContext, Component } from 'react';
 
 export const ShapeContext = createContext();
 
 class ShapeContextProvider extends Component {
     state = {
-        currentShape: square,
-        square: square,
-        star: star-five,
-        diamond: diamond,
-        triangle: triangle
+        currentShape: 'square',
     }
     toggleShapeSquare = () => {
-        this.setState({currentShape: square})
+        this.setState({currentShape: 'square'})
     }
     toggleShapeStar = () => {
-        this.setState({currentShape: star})
+        this.setState({currentShape: 'star-five'})
     }
     toggleShapeDiamond = () => {
-        this.setState({currentShape: diamond})
+        this.setState({currentShape: 'diamond'})
     }
     toggleShapeTriangle = () => {
-        this.setState({currentShape: triangle})
+        this.setState({currentShape: 'triangle'})
     }
 
     render() {

@@ -1,23 +1,26 @@
-import React, {useState} from 'react';
+import React, {Component} from 'react';
 import './container.css';
+import { ShapeContext } from '../../contexts/ShapeContext';
 
-const Container = () => {
-
-    const [shape, setShape] = useState('square')
+class Container extends Component {
+    static contextType = ShapeContext;
+render() {
+    const {currentShape} = this.context;
     return (
-        <div class="present">
-    <div class="lid">
+        <div className="present">
+    <div className="lid">
         <span></span>
     </div>
-    <div class="content">
-        <div class={shape} />
+    <div className="content">
+        <div className={currentShape} />
     </div>
-    <div class="box">
+    <div className="box">
         <span></span>
         <span></span>
     </div>
 </div>
     )
+}
 }
 
 export default Container;
